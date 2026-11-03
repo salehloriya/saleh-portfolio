@@ -188,11 +188,7 @@
   --ring: 201 96% 40%;
 }
 
-/* Base Body & Typography Styles */
-body, h1, h2, h3, h4, h5, h6, button, input, textarea {
-  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-}
-
+/* Base Body Styles (Restoring original template typography) */
 body {
   background-color: var(--bg-color) !important;
   color: var(--fg-color) !important;
