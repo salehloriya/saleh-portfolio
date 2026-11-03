@@ -9,7 +9,6 @@ import {
   MessageSquare,
   Send,
 } from "lucide-react";
-import { CustomCursor } from "./components/CustomCursor";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
@@ -21,12 +20,20 @@ import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { FloatingDock, type DockItemData } from "./components/FloatingDock";
+import { CustomCursor } from "./components/CustomCursor";
 
 export const App: React.FC = () => {
-  const [showDock, setShowDock] = useState(false);
+  const [showDock, setShowDock] = useState(true);
 
+  // Manage dock visibility on scroll
   useEffect(() => {
     const handleScroll = () => {
+      const isMobile = window.innerWidth < 768;
+      if (isMobile) {
+        setShowDock(true);
+        return;
+      }
+
       const cur =
         window.pageYOffset ||
         window.scrollY ||
@@ -34,8 +41,7 @@ export const App: React.FC = () => {
         document.body.scrollTop ||
         0;
 
-      // In the hero section at the top, the dock is hidden
-      // As soon as user scrolls down (> 60px), dock floats up smoothly
+      // On desktop, dock floats up smoothly after scrolling > 60px
       setShowDock(cur > 60);
     };
 
@@ -60,36 +66,45 @@ export const App: React.FC = () => {
 
   const dockItems: DockItemData[] = [
     {
+      id: "hero",
       icon: <Home className="w-4 h-4 sm:w-5 sm:h-5" />,
       label: "Home",
       onClick: () => scrollTo("hero"),
     },
     {
+      id: "about",
       icon: <User className="w-4 h-4 sm:w-5 sm:h-5" />,
       label: "About",
       onClick: () => scrollTo("about"),
     },
     {
+      id: "career",
       icon: <Briefcase className="w-4 h-4 sm:w-5 sm:h-5" />,
       label: "Career",
       onClick: () => scrollTo("career"),
     },
     {
+      id: "projects",
       icon: <FolderKanban className="w-4 h-4 sm:w-5 sm:h-5" />,
       label: "Projects",
       onClick: () => scrollTo("projects"),
     },
     {
+      id: "education",
       icon: <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5" />,
       label: "Education",
+      shortLabel: "Edu",
       onClick: () => scrollTo("education"),
     },
     {
+      id: "testimonials",
       icon: <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5" />,
       label: "Testimonials",
+      shortLabel: "Reviews",
       onClick: () => scrollTo("testimonials"),
     },
     {
+      id: "contact",
       icon: <Send className="w-4 h-4 sm:w-5 sm:h-5" />,
       label: "Contact",
       onClick: () => scrollTo("contact"),
@@ -119,7 +134,7 @@ export const App: React.FC = () => {
       {/* Footer */}
       <Footer />
 
-      {/* Floating Bottom Navigation Dock */}
+      {/* Bottom Navigation Dock: App Tab Bar on Mobile, macOS Liquid Dock on Desktop */}
       <motion.aside
         initial={false}
         animate={{
@@ -127,18 +142,8 @@ export const App: React.FC = () => {
           opacity: showDock ? 1 : 0,
         }}
         transition={{ type: "spring", stiffness: 280, damping: 24 }}
-        style={{
-          position: "fixed",
-          bottom: "16px",
-          left: 0,
-          right: 0,
-          zIndex: 9999,
-          display: "flex",
-          justifyContent: "center",
-          paddingLeft: "16px",
-          paddingRight: "16px",
-          pointerEvents: showDock ? "auto" : "none",
-        }}
+        style={{ zIndex: 99999 }}
+        className="fixed bottom-0 md:bottom-4 inset-x-0 z-[99999] flex justify-center px-0 md:px-4 pointer-events-auto"
         aria-hidden={!showDock}
       >
         <FloatingDock
