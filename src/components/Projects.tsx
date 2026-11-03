@@ -5,34 +5,34 @@ import { ArrowUpRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "AI-Powered Design Platform",
-    subtitle: "Generative assets and automated scaling for e-commerce platforms",
-    link: "#",
-    image: "https://images.pexels.com/photos/8294591/pexels-photo-8294591.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    title: "BirStock - Inventory & ERP Suite",
+    subtitle: "Desktop software for automated stock tracking, barcode scanning, and PDF invoicing",
+    link: "https://birstock.com/",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
     gridClass: "md:col-span-7 h-[420px]",
   },
   {
     id: 2,
-    title: "Global E-Learning",
-    subtitle: "Serving 1.2M+ active students worldwide",
+    title: "Restaurant POS & Billing System",
+    subtitle: "Petpooja-style cloud POS with table management, live KOT billing & real-time analytics",
     link: "#",
-    image: "https://images.pexels.com/photos/15595050/pexels-photo-15595050.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1200",
     gridClass: "md:col-span-5 h-[420px]",
   },
   {
     id: 3,
-    title: "Modular ERP System",
-    subtitle: "Enterprise logistics & supply chain manufacturing engine",
-    link: "#",
-    image: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    title: "Tailor Management App",
+    subtitle: "Mobile app with OTP login, client measurement ledgers, and order tracking",
+    link: "https://github.com/salehloriya/tailor_g",
+    image: "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?auto=format&fit=crop&q=80&w=1200",
     gridClass: "md:col-span-5 h-[360px]",
   },
   {
     id: 4,
-    title: "Fintech Predictive Dashboard",
-    subtitle: "Real-time analytics, algorithmic trading & risk modeling",
+    title: "E-Commerce & Admin Dashboard",
+    subtitle: "Modern digital store with product CRUD, cart operations & revenue metrics",
     link: "#",
-    image: "https://images.pexels.com/photos/6169673/pexels-photo-6169673.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
     gridClass: "md:col-span-7 h-[360px]",
   },
 ];
@@ -60,6 +60,8 @@ export const Projects: React.FC = () => {
           <motion.a
             key={item.id}
             href={item.link}
+            target={item.link.startsWith("http") ? "_blank" : undefined}
+            rel={item.link.startsWith("http") ? "noreferrer" : undefined}
             className={`group relative overflow-hidden rounded-[2.25rem] block shadow-xl border border-foreground/10 ${item.gridClass}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
