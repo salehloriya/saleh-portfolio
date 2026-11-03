@@ -145,7 +145,7 @@ export const Hero: React.FC = () => {
             name="Saleh Loriya"
             role="Full-Stack Developer"
             badgeId="SJ-2026-DEV"
-            image="/profile.jpg"
+            image="/profile-new.jpg"
             accentColor="#8b5cf6"
             ropeLength={75}
             ropeColor="#27272a"
