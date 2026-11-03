@@ -6,22 +6,22 @@ const stats = [
   {
     icon: PanelsTopLeft,
     label: "Years Experience",
-    value: "10+",
+    value: "1+",
   },
   {
     icon: CodeXml,
     label: "Projects Completed",
-    value: "150+",
-  },
-  {
-    icon: Users,
-    label: "Happy Clients",
-    value: "50+",
+    value: "7+",
   },
   {
     icon: Globe,
-    label: "Global Brands",
-    value: "12",
+    label: "Platforms (Web, App, PC)",
+    value: "3+",
+  },
+  {
+    icon: Users,
+    label: "Client Satisfaction",
+    value: "100%",
   },
 ];
 
@@ -43,7 +43,7 @@ export const About: React.FC = () => {
               <span className="text-gradient-primary">Digital Excellence</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a seasoned Full-Stack Developer and UI/UX Designer with over 10 years of experience delivering high-quality software solutions for global enterprises and startups. My career blends deep technical expertise with leadership skills, enabling me to design, build, and lead innovative digital products from concept to launch.
+              I am a passionate Full-Stack MERN & Cross-Platform App Developer with practical experience in crafting robust web apps, mobile apps (React Native), and desktop software (Electron.js). Currently working at Valudas Technologies and pursuing B.Sc. IT, I focus on transforming client requirements into scalable, modern, and user-friendly digital products.
             </p>
           </div>
         </div>
