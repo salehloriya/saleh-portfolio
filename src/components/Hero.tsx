@@ -82,7 +82,8 @@ export const Hero: React.FC = () => {
           >
             <button
               onClick={() => scrollTo("#projects")}
-              className="rounded-full px-7 h-12 bg-primary text-primary-foreground font-semibold flex items-center gap-2 hover:bg-[#003B5C] transition-all shadow-[0_4px_20px_rgba(0,78,122,0.25)] hover:shadow-[0_6px_25px_rgba(0,78,122,0.4)] hover:-translate-y-1 cursor-pointer"
+              className="rounded-full px-7 h-12 text-white font-semibold flex items-center gap-2 transition-all hover:-translate-y-1 cursor-pointer shadow-lg"
+              style={{ backgroundColor: "var(--primary-color)" }}
             >
               <span>View Work</span>
               <ArrowRight className="w-4 h-4" />
@@ -92,7 +93,12 @@ export const Hero: React.FC = () => {
               download="Saleh_Loriya_Resume.pdf"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full px-7 h-12 bg-[#EAF3F8] text-[#004E7A] font-semibold flex items-center gap-2 hover:bg-[#D5E8F3] transition-all hover:-translate-y-1 border border-[#004E7A]/25 cursor-pointer shadow-sm"
+              className="rounded-full px-7 h-12 font-semibold flex items-center gap-2 transition-all hover:-translate-y-1 border cursor-pointer shadow-sm"
+              style={{
+                backgroundColor: "var(--section-color)",
+                color: "var(--primary-color)",
+                borderColor: "var(--border-color)",
+              }}
             >
               <span>Resume</span>
               <Download className="w-4 h-4" />

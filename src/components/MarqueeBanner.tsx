@@ -28,7 +28,13 @@ const skills: SkillItem[] = [
 
 export const MarqueeBanner: React.FC = () => {
   return (
-    <div className="w-full py-6 border-t border-b border-[#D1E5F0] bg-[#EAF3F8] flex flex-col items-center justify-center overflow-hidden">
+    <div
+      className="w-full py-6 border-t border-b flex flex-col items-center justify-center overflow-hidden transition-colors duration-300"
+      style={{
+        backgroundColor: "var(--section-color)",
+        borderColor: "var(--border-color)",
+      }}
+    >
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -36,14 +42,29 @@ export const MarqueeBanner: React.FC = () => {
         viewport={{ once: true }}
         className="w-full overflow-hidden relative flex items-center"
       >
-        <div className="absolute left-0 w-32 h-full bg-gradient-to-r from-[#EAF3F8] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 w-32 h-full bg-gradient-to-l from-[#EAF3F8] to-transparent z-10 pointer-events-none" />
+        <div
+          className="absolute left-0 w-32 h-full z-10 pointer-events-none"
+          style={{
+            background: "linear-gradient(to right, var(--section-color), transparent)",
+          }}
+        />
+        <div
+          className="absolute right-0 w-32 h-full z-10 pointer-events-none"
+          style={{
+            background: "linear-gradient(to left, var(--section-color), transparent)",
+          }}
+        />
 
         <div className="flex w-max animate-[marquee_35s_linear_infinite] whitespace-nowrap items-center hover:[animation-play-state:paused] py-1">
           {[...skills, ...skills].map((item, idx) => (
             <div
               key={idx}
-              className="mx-3 px-5 py-2.5 rounded-full border border-[#004E7A]/15 bg-white text-[#111827] font-semibold text-sm flex items-center gap-3 transition-all hover:scale-105 hover:border-[#004E7A] hover:shadow-md cursor-default shadow-sm group shrink-0"
+              className="mx-3 px-5 py-2.5 rounded-full border font-semibold text-sm flex items-center gap-3 transition-all hover:scale-105 hover:shadow-md cursor-default shadow-sm group shrink-0"
+              style={{
+                backgroundColor: "var(--card-color)",
+                borderColor: "var(--border-color)",
+                color: "var(--fg-color)",
+              }}
             >
               <img
                 src={item.icon}

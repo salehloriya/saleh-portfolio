@@ -87,7 +87,10 @@ export const Navbar: React.FC = () => {
               onClick={() => scrollTo("#hero")}
               className="cursor-pointer font-extrabold text-lg flex items-center gap-3 group select-none"
             >
-              <div className="w-9 h-9 rounded-xl bg-[#004E7A] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300">
+              <div
+                className="w-9 h-9 rounded-xl flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300"
+                style={{ backgroundColor: "var(--primary-color)" }}
+              >
                 <span className="font-black text-xs tracking-tighter text-white">
                   SL
                 </span>

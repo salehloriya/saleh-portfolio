@@ -94,46 +94,167 @@
 
 
 /* ========================================================
-   SALEH LORIYA PORTFOLIO THEME OVERRIDES:
-   Primary: #004E7A
-   Background: #FFFFFF
-   Text / Foreground: #111827
-   Section: #EAF3F8
+   SALEH LORIYA PORTFOLIO - COMPLETE DUAL THEME ENGINE
+   Day Palette:
+     Primary: #004E7A
+     Background: #FFFFFF
+     Text / Foreground: #111827
+     Section: #EAF3F8
+     Border: #D1E5F0
+     Card: #FFFFFF
+
+   Night Palette:
+     Primary: #0284C7
+     Background: #080D15
+     Text / Foreground: #F8FAFC
+     Section: #0F1724
+     Border: #1E2E42
+     Card: #131E2E
    ======================================================== */
 
-:root, html, body, .light {
-  /* Tailwind HSL format (numbers without comma) */
-  --background: 0 0% 100% !important;
-  --foreground: 221 39% 11% !important;
-  --card: 0 0% 100% !important;
-  --card-foreground: 221 39% 11% !important;
-  --popover: 0 0% 100% !important;
-  --popover-foreground: 221 39% 11% !important;
-  --primary: 202 100% 24% !important;
-  --primary-foreground: 0 0% 100% !important;
-  --secondary: 201 47% 95% !important;
-  --secondary-foreground: 202 100% 24% !important;
-  --muted: 201 47% 95% !important;
-  --muted-foreground: 215 16% 40% !important;
-  --accent: 201 47% 95% !important;
-  --accent-foreground: 202 100% 24% !important;
-  --border: 201 50% 88% !important;
-  --input: 201 50% 88% !important;
-  --ring: 202 100% 24% !important;
+:root {
+  /* Day / Light Mode */
+  --primary-color: #004E7A;
+  --primary-hover: #003859;
+  --primary-glow: rgba(0, 78, 122, 0.25);
+  
+  --bg-color: #FFFFFF;
+  --fg-color: #111827;
+  --section-color: #EAF3F8;
+  --card-color: #FFFFFF;
+  --border-color: #D1E5F0;
+  --muted-color: #EAF3F8;
+  --muted-fg-color: #4B5563;
+  --input-bg: #FFFFFF;
+  --dock-bg: rgba(255, 255, 255, 0.95);
+  --dock-border: rgba(0, 78, 122, 0.18);
+  --pattern-dot: rgba(0, 78, 122, 0.12);
 
-  /* Direct variables */
-  --bg: #FFFFFF !important;
-  --fg: #111827 !important;
-  --glass-bg: rgba(255, 255, 255, 0.9) !important;
-  --glass-border: rgba(0, 78, 122, 0.15) !important;
+  /* Tailwind CSS variables for Light Mode */
+  --background: 0 0% 100%;
+  --foreground: 221 39% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 221 39% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 221 39% 11%;
+  --primary: 202 100% 24%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 201 47% 95%;
+  --secondary-foreground: 202 100% 24%;
+  --muted: 201 47% 95%;
+  --muted-foreground: 215 16% 40%;
+  --accent: 201 47% 95%;
+  --accent-foreground: 202 100% 24%;
+  --border: 201 50% 88%;
+  --input: 201 50% 88%;
+  --ring: 202 100% 24%;
 }
 
+.dark, html.dark, [data-theme="dark"] {
+  /* Night / Dark Mode */
+  --primary-color: #0284C7;
+  --primary-hover: #0369A1;
+  --primary-glow: rgba(2, 132, 199, 0.35);
+
+  --bg-color: #080D15;
+  --fg-color: #F8FAFC;
+  --section-color: #0F1724;
+  --card-color: #131E2E;
+  --border-color: #1E2E42;
+  --muted-color: #172437;
+  --muted-fg-color: #94A3B8;
+  --input-bg: #0F1724;
+  --dock-bg: rgba(19, 30, 46, 0.95);
+  --dock-border: rgba(2, 132, 199, 0.25);
+  --pattern-dot: rgba(56, 189, 248, 0.18);
+
+  /* Tailwind CSS variables for Dark Mode */
+  --background: 216 44% 6%;
+  --foreground: 210 40% 98%;
+  --card: 215 41% 13%;
+  --card-foreground: 210 40% 98%;
+  --popover: 215 41% 13%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 201 96% 40%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 41% 16%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 215 41% 16%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 215 41% 16%;
+  --accent-foreground: 210 40% 98%;
+  --border: 214 37% 19%;
+  --input: 214 37% 19%;
+  --ring: 201 96% 40%;
+}
+
+/* Base Body Styles */
 body {
-  background-color: #FFFFFF !important;
-  color: #111827 !important;
+  background-color: var(--bg-color) !important;
+  color: var(--fg-color) !important;
   background-image: none !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Explicit Utility Mappings (guarantees no missing classes) */
+.bg-\[\#004E7A\],
+.bg-primary {
+  background-color: var(--primary-color) !important;
+  color: #FFFFFF !important;
+}
+
+.hover\:bg-\[\#003B5C\]:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+.text-\[\#004E7A\],
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.border-\[\#004E7A\],
+.border-primary,
+.border-\[\#004E7A\]\/15,
+.border-\[\#004E7A\]\/25,
+.border-\[\#004E7A\]\/40 {
+  border-color: var(--primary-color) !important;
+}
+
+.bg-\[\#EAF3F8\],
+.section-tint {
+  background-color: var(--section-color) !important;
+  transition: background-color 0.3s ease;
+}
+
+.border-\[\#D1E5F0\],
+.border-\[\#003B5C\] {
+  border-color: var(--border-color) !important;
+  transition: border-color 0.3s ease;
+}
+
+.text-\[\#111827\] {
+  color: var(--fg-color) !important;
+}
+
+/* Dark Mode Overrides for Hardcoded Components */
+.dark .bg-white {
+  background-color: var(--card-color) !important;
+  color: var(--fg-color) !important;
+}
+
+.dark footer.bg-white {
+  background-color: var(--bg-color) !important;
+}
+
+.dark .text-muted-foreground {
+  color: var(--muted-fg-color) !important;
+}
+
+.dark .border-foreground\/10 {
+  border-color: var(--border-color) !important;
+}
+
+/* Gradient Headings */
 .text-gradient-primary {
   background: linear-gradient(135deg, #004E7A 0%, #0284C7 50%, #004E7A 100%) !important;
   -webkit-background-clip: text !important;
@@ -142,45 +263,68 @@ body {
   color: #004E7A !important;
 }
 
+.dark .text-gradient-primary {
+  background: linear-gradient(135deg, #38BDF8 0%, #60A5FA 50%, #38BDF8 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: #38BDF8 !important;
+}
+
+/* Glass Panels */
 .glass-panel {
-  background-color: #FFFFFF !important;
+  background-color: rgba(255, 255, 255, 0.92) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
-  border: 1px solid rgba(0, 78, 122, 0.15) !important;
-  box-shadow: 0 10px 30px -10px rgba(0, 78, 122, 0.08) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 10px 30px -10px var(--primary-glow) !important;
+  transition: all 0.3s ease;
 }
 
-.section-tint {
-  background-color: #EAF3F8 !important;
+.dark .glass-panel {
+  background-color: rgba(19, 30, 46, 0.9) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6) !important;
 }
 
+/* Floating Dock Theme Support */
 .liquid-dock-wrapper {
-  background: rgba(255, 255, 255, 0.95) !important;
-  border: 1px solid rgba(0, 78, 122, 0.18) !important;
-  box-shadow: 0 15px 35px -5px rgba(0, 78, 122, 0.15), 0 0 0 1px rgba(0, 78, 122, 0.05) !important;
+  background: var(--dock-bg) !important;
+  border: 1px solid var(--dock-border) !important;
+  box-shadow: 0 15px 35px -5px var(--primary-glow) !important;
+  transition: all 0.3s ease;
 }
 
 .liquid-dock-cavity {
-  background: rgba(234, 243, 248, 0.95) !important;
-  border: 1px solid rgba(209, 229, 240, 0.9) !important;
+  background: var(--section-color) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .liquid-dock-item {
-  background: #FFFFFF !important;
-  color: #004E7A !important;
-  border: 1px solid rgba(0, 78, 122, 0.18) !important;
-  box-shadow: 0 3px 10px rgba(0, 78, 122, 0.08) !important;
+  background: var(--card-color) !important;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--dock-border) !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.2s ease;
 }
 
 .liquid-dock-item:hover {
-  background: #EAF3F8 !important;
-  border-color: #004E7A !important;
-  color: #004E7A !important;
+  background: var(--section-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.dark .liquid-dock-item:hover {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #FFFFFF !important;
 }
 
 .liquid-dock-tooltip {
-  background: #004E7A !important;
+  background: var(--primary-color) !important;
   color: #FFFFFF !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 4px 14px rgba(0, 78, 122, 0.25) !important;
+  box-shadow: 0 4px 14px var(--primary-glow) !important;
 }

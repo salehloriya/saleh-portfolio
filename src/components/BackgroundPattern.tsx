@@ -45,13 +45,16 @@ export const BackgroundPattern: React.FC<BackgroundPatternProps> = ({
             patternUnits="userSpaceOnUse"
             patternTransform={`translate(${x} ${y})`}
           >
-            <circle cx={cx} cy={cy} r={cr} fill="#004E7A" fillOpacity="0.09" />
+            <circle cx={cx} cy={cy} r={cr} fill="var(--pattern-dot)" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" strokeWidth={0} fill={`url(#${id})`} />
       </svg>
       {glow && (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] bg-[#EAF3F8] blur-[120px] rounded-full pointer-events-none opacity-80" />
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] blur-[120px] rounded-full pointer-events-none opacity-80"
+          style={{ backgroundColor: "var(--section-color)" }}
+        />
       )}
     </div>
   );

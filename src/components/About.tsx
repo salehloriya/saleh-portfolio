@@ -27,7 +27,14 @@ const stats = [
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="w-full bg-[#EAF3F8] py-24 border-y border-[#D1E5F0]">
+    <section
+      id="about"
+      className="w-full py-24 border-y transition-colors duration-300"
+      style={{
+        backgroundColor: "var(--section-color)",
+        borderColor: "var(--border-color)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           className="flex flex-col md:flex-row gap-16 items-center"
@@ -39,7 +46,7 @@ export const About: React.FC = () => {
           {/* Left Column: Story */}
           <div className="flex-1 space-y-8">
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-[#111827]">
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-foreground">
                 Passionate about{" "}
                 <span className="text-gradient-primary">Digital Excellence</span>
               </h2>
@@ -54,7 +61,11 @@ export const About: React.FC = () => {
             {stats.map((item, idx) => (
               <motion.div
                 key={idx}
-                className="bg-white p-6 rounded-2xl border border-[#004E7A]/15 hover:border-[#004E7A]/40 shadow-sm hover:shadow-md transition-all group relative overflow-hidden"
+                className="p-6 rounded-2xl border shadow-sm hover:shadow-md transition-all group relative overflow-hidden"
+                style={{
+                  backgroundColor: "var(--card-color)",
+                  borderColor: "var(--border-color)",
+                }}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: idx * 0.1, duration: 0.5 }}

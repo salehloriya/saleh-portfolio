@@ -54,7 +54,11 @@ export const Testimonials: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.15, duration: 0.5 }}
-            className="bg-[#EAF3F8] p-8 rounded-3xl border border-[#D1E5F0] flex flex-col relative overflow-hidden group hover:border-[#004E7A]/40 transition-all duration-300 shadow-sm hover:shadow-lg"
+            className="p-8 rounded-3xl border flex flex-col relative overflow-hidden group transition-all duration-300 shadow-sm hover:shadow-lg"
+            style={{
+              backgroundColor: "var(--section-color)",
+              borderColor: "var(--border-color)",
+            }}
           >
             <div className="absolute -right-10 -top-10 w-32 h-32 bg-[#004E7A]/5 rounded-full blur-[40px] group-hover:bg-[#004E7A]/10 transition-colors duration-500 pointer-events-none" />
 

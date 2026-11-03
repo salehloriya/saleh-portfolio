@@ -89,10 +89,17 @@ export const Career: React.FC = () => {
                   {/* Center Dot indicator */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 hidden lg:block">
                     <motion.div
-                      className="w-6 h-6 rounded-full border-4 border-[#004E7A] bg-white flex items-center justify-center shadow-lg"
+                      className="w-6 h-6 rounded-full border-4 flex items-center justify-center shadow-lg"
+                      style={{
+                        borderColor: "var(--primary-color)",
+                        backgroundColor: "var(--card-color)",
+                      }}
                       whileHover={{ scale: 1.25 }}
                     >
-                      <div className="w-2 h-2 rounded-full bg-[#004E7A]" />
+                      <div
+                        className="w-2 h-2 rounded-full"
+                        style={{ backgroundColor: "var(--primary-color)" }}
+                      />
                     </motion.div>
                   </div>
 
@@ -106,10 +113,23 @@ export const Career: React.FC = () => {
                       isEven ? "lg:mr-[calc(50%+20px)]" : "lg:ml-[calc(50%+20px)]"
                     }`}
                   >
-                    <div className="bg-[#EAF3F8] p-8 rounded-[2rem] border border-[#D1E5F0] shadow-md hover:border-[#004E7A]/40 hover:shadow-xl transition-all">
+                    <div
+                      className="p-8 rounded-[2rem] border shadow-md hover:shadow-xl transition-all"
+                      style={{
+                        backgroundColor: "var(--section-color)",
+                        borderColor: "var(--border-color)",
+                      }}
+                    >
                       <div className="flex items-center gap-2 mb-3">
                         {item.icon}
-                        <span className="text-sm font-bold text-primary font-mono bg-white px-3 py-1 rounded-full border border-primary/20">
+                        <span
+                          className="text-sm font-bold font-mono px-3 py-1 rounded-full border"
+                          style={{
+                            backgroundColor: "var(--card-color)",
+                            borderColor: "var(--border-color)",
+                            color: "var(--primary-color)",
+                          }}
+                        >
                           {item.year}
                         </span>
                       </div>

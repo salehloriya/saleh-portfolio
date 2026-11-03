@@ -39,7 +39,14 @@ const projects = [
 
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="w-full bg-[#EAF3F8] py-24 border-y border-[#D1E5F0]">
+    <section
+      id="projects"
+      className="w-full py-24 border-y transition-colors duration-300"
+      style={{
+        backgroundColor: "var(--section-color)",
+        borderColor: "var(--border-color)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -48,7 +55,7 @@ export const Projects: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-center md:text-left text-[#111827]">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-center md:text-left text-foreground">
             Selected <span className="text-gradient-primary">Works</span>
           </h2>
           <p className="text-muted-foreground text-center md:text-left max-w-2xl text-lg">

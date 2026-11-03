@@ -51,7 +51,14 @@ const professionalTraits = [
 
 export const Education: React.FC = () => {
   return (
-    <section id="education" className="w-full bg-[#EAF3F8] py-24 border-y border-[#D1E5F0]">
+    <section
+      id="education"
+      className="w-full py-24 border-y transition-colors duration-300"
+      style={{
+        backgroundColor: "var(--section-color)",
+        borderColor: "var(--border-color)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 space-y-20">
         {/* Education Header & Cards */}
         <div>
@@ -66,7 +73,7 @@ export const Education: React.FC = () => {
               <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/25 flex items-center justify-center text-primary shadow-md">
                 <GraduationCap className="w-6 h-6" />
               </div>
-              <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#111827]">
+              <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-foreground">
                 Academic <span className="text-gradient-primary">Background</span>
               </h2>
             </div>
