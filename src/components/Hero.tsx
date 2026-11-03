@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Twitter, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import { BackgroundPattern } from "./BackgroundPattern";
-import { AuroraText } from "./AuroraText";
 import { LanyardBadge } from "./LanyardBadge";
 import { MarqueeBanner } from "./MarqueeBanner";
 
@@ -10,6 +9,24 @@ export const Hero: React.FC = () => {
   const scrollTo = (href: string) => {
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleDownloadResume = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/salehloriya-resume.pdf");
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = blobUrl;
+      link.download = "salehloriya-resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(blobUrl);
+    } catch {
+      window.location.href = "/salehloriya-resume.pdf";
+    }
   };
 
   return (
@@ -89,10 +106,9 @@ export const Hero: React.FC = () => {
               <ArrowRight className="w-4 h-4" />
             </button>
             <a
-              href="/resume.pdf"
-              download="Saleh_Loriya_Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
+              href="/salehloriya-resume.pdf"
+              download="salehloriya-resume.pdf"
+              onClick={handleDownloadResume}
               className="rounded-full px-7 h-12 font-semibold flex items-center gap-2 transition-all hover:-translate-y-1 border cursor-pointer shadow-sm"
               style={{
                 backgroundColor: "var(--section-color)",
