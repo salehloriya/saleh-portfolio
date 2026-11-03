@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
-import { CodeXml, Palette, Cpu, Layers } from "lucide-react";
+import { CodeXml, Smartphone, Monitor, Database } from "lucide-react";
 import { cn } from "../lib/utils";
 
 interface MagicCardProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -64,27 +64,27 @@ export const MagicCard: React.FC<MagicCardProps> = ({
 const services = [
   {
     icon: CodeXml,
-    title: "Full-Stack Development",
+    title: "Full-Stack Web Development",
     description:
-      "End-to-end web applications built with modern frameworks and highly scalable backend architectures.",
+      "Responsive and high-performance web applications built using React.js, Node.js, Express, and modern RESTful APIs.",
   },
   {
-    icon: Palette,
-    title: "UI/UX Architecture",
+    icon: Smartphone,
+    title: "Mobile App Development",
     description:
-      "Designing intuitive, accessible, and stunning interfaces that prioritize user experience and conversion.",
+      "Cross-platform mobile applications engineered with React Native and Expo, featuring clean UI and smooth native performance.",
   },
   {
-    icon: Cpu,
-    title: "Performance Optimization",
+    icon: Monitor,
+    title: "Desktop Software Development",
     description:
-      "Auditing and supercharging existing codebases for lighting-fast load times and seamless interactions.",
+      "Cross-platform desktop software developed with Electron.js, local databases (SQLite/MySQL), and automated reporting.",
   },
   {
-    icon: Layers,
-    title: "Systems Architecture",
+    icon: Database,
+    title: "Backend & Database Management",
     description:
-      "Designing complex microservices, API integrations, and robust database models for enterprise needs.",
+      "Secure authentication, JWT integration, relational database design (MySQL), and role-based admin dashboards.",
   },
 ];
 
@@ -102,7 +102,7 @@ export const Services: React.FC = () => {
           What I Do
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-          Delivering comprehensive digital solutions that cover the entire lifecycle of professional product engineering.
+          Delivering high-quality web, mobile, and desktop software solutions tailored to business and client needs.
         </p>
       </motion.div>
 
