@@ -14,18 +14,18 @@ export const Hero: React.FC = () => {
   const handleDownloadResume = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch("/salehloriya-resume.pdf");
+      const response = await fetch("/Saleh_Loriya_Resume.pdf");
       const blob = await response.blob();
       const blobUrl = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = blobUrl;
-      link.download = "salehloriya-resume.pdf";
+      link.download = "Saleh_Loriya_Resume.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
       window.URL.revokeObjectURL(blobUrl);
     } catch {
-      window.location.href = "/salehloriya-resume.pdf";
+      window.location.href = "/Saleh_Loriya_Resume.pdf";
     }
   };
 
@@ -106,8 +106,8 @@ export const Hero: React.FC = () => {
               <ArrowRight className="w-4 h-4" />
             </button>
             <a
-              href="/salehloriya-resume.pdf"
-              download="salehloriya-resume.pdf"
+              href="/Saleh_Loriya_Resume.pdf"
+              download="Saleh_Loriya_Resume.pdf"
               onClick={handleDownloadResume}
               className="rounded-full px-7 h-12 font-semibold flex items-center gap-2 transition-all hover:-translate-y-1 border cursor-pointer shadow-sm"
               style={{
