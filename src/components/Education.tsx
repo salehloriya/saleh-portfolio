@@ -5,39 +5,39 @@ import { MagicCard } from "./Services";
 
 const educationList = [
   {
-    degree: "M.Sc. in Computer Science",
-    school: "University of Chennai",
-    year: "2016 – 2018",
-    badge: "IEEE Published Author",
-    badgeColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+    degree: "B.Sc. in Information Technology",
+    school: "Gokul Global University - (GGU)",
+    year: "2025 – 2028",
+    badge: "Pursuing Degree",
+    badgeColor: "text-primary bg-primary/10 border-primary/30",
     details: [
-      "Specialized in Software Architecture, Distributed Systems, and AI Applications",
-      "Thesis on Machine Learning for Predictive Analytics & Neural Optimization",
-      "Led enterprise research project on Cloud-Based ERP microservices",
-      "Published 2 peer-reviewed research papers in IEEE international conferences",
+      "Rigorous coursework in Web Development, Software Engineering, and Database Architecture",
+      "Specialized in Full-Stack JavaScript, Modern MERN Architecture & React Native Apps",
+      "Actively developing production-ready systems for business management and desktop clients",
+      "Focusing on building scalable cross-platform applications and secure RESTful APIs",
     ],
   },
   {
-    degree: "B.Sc. in Information Technology",
-    school: "Anna University",
-    year: "2013 – 2016",
-    badge: "Top 5% Honors",
-    badgeColor: "text-primary bg-primary/10 border-primary/30",
+    degree: "Higher Secondary Certificate (HSC)",
+    school: "Gujarat Board (GSEB)",
+    year: "2023 – 2024",
+    badge: "Foundational Studies",
+    badgeColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
     details: [
-      "Gained rigorous foundation in Systems Programming, Networking & DB Management",
-      "Ranked in top 5% across Software Engineering & Algorithms coursework",
-      "Architected campus-wide digital library management system",
-      "Organized and chaired annual technical symposium for 3 consecutive years",
+      "Completed secondary education with strong emphasis on logical and analytical thinking",
+      "Engaged in intensive foundational studies and self-guided software programming",
+      "Mastered core fundamentals of JavaScript, modern HTML5, and responsive CSS frameworks",
+      "Built foundational projects exploring desktop systems and frontend user interfaces",
     ],
   },
 ];
 
 const technicalArsenal = [
-  { name: "React.js / Next.js", level: 95, icon: Code2, color: "text-cyan-400" },
-  { name: "Node.js / Express", level: 90, icon: Server, color: "text-emerald-400" },
-  { name: "TypeScript & JavaScript", level: 92, icon: Terminal, color: "text-blue-400" },
-  { name: "Database (MongoDB / PostgreSQL)", level: 88, icon: Database, color: "text-amber-400" },
-  { name: "Cloud (AWS / Azure)", level: 85, icon: Cloud, color: "text-purple-400" },
+  { name: "React.js / React Native", level: 95, icon: Code2, color: "text-cyan-400" },
+  { name: "Node.js / Express.js", level: 90, icon: Server, color: "text-emerald-400" },
+  { name: "JavaScript & TypeScript", level: 92, icon: Terminal, color: "text-blue-400" },
+  { name: "Databases (MySQL / SQLite / MongoDB)", level: 88, icon: Database, color: "text-amber-400" },
+  { name: "Electron.js & Desktop Systems", level: 85, icon: Cloud, color: "text-purple-400" },
 ];
 
 const professionalTraits = [

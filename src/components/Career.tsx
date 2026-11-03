@@ -27,14 +27,6 @@ const careerEvents: TimelineEvent[] = [
       "Engineered cross-platform client solutions including the BirStock ERP inventory desktop system (Electron.js), Restaurant POS web software, and customer-facing mobile apps with clean architecture, offline support, and local database storage.",
     icon: <Code className="h-4 w-4 mr-2 text-primary" />,
   },
-  {
-    year: "2023 – 2024",
-    title: "Web Developer & Interface Designer",
-    subtitle: "Independent Developer",
-    description:
-      "Designed and developed responsive web solutions with modern JavaScript, React.js, and Tailwind CSS. Built high-conversion interfaces and optimized workflows for fast load times and seamless cross-device compatibility.",
-    icon: <Sparkles className="h-4 w-4 mr-2 text-primary" />,
-  },
 ];
 
 export const Career: React.FC = () => {
