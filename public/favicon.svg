@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="slGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#004E7A" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="strokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#004E7A" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#slGrad)" stroke="url(#strokeGrad)" stroke-width="2" />
+
+  <!-- Monogram SL -->
+  <text
+    x="32"
+    y="33"
+    fill="#FFFFFF"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    font-size="27"
+    font-weight="900"
+    letter-spacing="-1.5"
+    text-anchor="middle"
+    dominant-baseline="central"
+  >SL</text>
+</svg>
