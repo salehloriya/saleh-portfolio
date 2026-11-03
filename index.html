@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scarlett Rose - Director of Product Engineering | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      window.addEventListener('error', function(event) {
+        console.error('GLOBAL ERROR:', event.error || event.message);
+        var errDiv = document.createElement('div');
+        errDiv.style = 'position:fixed;top:0;left:0;right:0;background:#dc2626;color:white;padding:24px;z-index:999999;font-family:monospace;white-space:pre-wrap;box-shadow:0 10px 25px rgba(0,0,0,0.5);font-size:14px;';
+        errDiv.innerText = 'Runtime Error:\n' + (event.error ? (event.error.stack || event.error.message) : event.message);
+        document.body.appendChild(errDiv);
+      });
+      window.addEventListener('unhandledrejection', function(event) {
+        console.error('UNHANDLED REJECTION:', event.reason);
+        var errDiv = document.createElement('div');
+        errDiv.style = 'position:fixed;top:0;left:0;right:0;background:#dc2626;color:white;padding:24px;z-index:999999;font-family:monospace;white-space:pre-wrap;box-shadow:0 10px 25px rgba(0,0,0,0.5);font-size:14px;';
+        errDiv.innerText = 'Unhandled Rejection:\n' + (event.reason ? (event.reason.stack || event.reason.message || event.reason) : 'Unknown');
+        document.body.appendChild(errDiv);
+      });
+    </script>
+  </head>
+  <body class="bg-[#0f1014] text-[#fafafa] antialiased selection:bg-[#8b5cf6]/30 selection:text-[#fafafa]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
