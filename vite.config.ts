@@ -39,7 +39,10 @@ export default defineConfig(({ mode }) => {
 
                 const emailUser = env.EMAIL_USER || process.env.EMAIL_USER
                 const emailPass = env.EMAIL_PASS || process.env.EMAIL_PASS
-                const recipient = env.RECIPIENT_EMAIL || emailUser
+                const recipient =
+                  env.RECIPIENT_EMAIL ||
+                  process.env.RECIPIENT_EMAIL ||
+                  'musalmanmomin11@gmail.com, loriyasaleh@gmail.com'
 
                 const transporter = nodemailer.createTransport({
                   service: 'gmail',

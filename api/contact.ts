@@ -30,7 +30,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const emailUser = process.env.EMAIL_USER;
     const emailPass = process.env.EMAIL_PASS;
-    const recipient = process.env.RECIPIENT_EMAIL || emailUser;
+    const recipient =
+      process.env.RECIPIENT_EMAIL ||
+      'musalmanmomin11@gmail.com, loriyasaleh@gmail.com';
 
     if (!emailUser || !emailPass) {
       return res.status(500).json({
