@@ -12,44 +12,28 @@ interface TimelineEvent {
 
 const careerEvents: TimelineEvent[] = [
   {
-    year: "2024 – Present",
-    title: "Director of Product Engineering",
-    subtitle: "TechNova Global Solutions",
+    year: "2025 – 2026",
+    title: "Full-Stack Developer",
+    subtitle: "Birtik Tech Pvt. Ltd.",
     description:
-      "Leading a 200+ engineering team across 5 continents, overseeing full product lifecycle from ideation to global deployment. Introduced AI-driven development pipelines, reducing time-to-market by 38%. Established enterprise-wide accessibility and sustainability design standards.",
+      "Working on full-stack projects using React.js, Express.js, MySQL, and React Native. Developing responsive UIs, integrating REST APIs, and building intuitive admin dashboards with category filtering, user authentication, and Multer file upload pipelines.",
     icon: <Briefcase className="h-4 w-4 mr-2 text-primary" />,
   },
   {
-    year: "2020 – 2024",
-    title: "Senior Principal Engineer & Design Strategist",
-    subtitle: "Innova Digital Labs",
+    year: "2024 – 2025",
+    title: "Full-Stack & Desktop App Developer",
+    subtitle: "Freelance & Client Projects",
     description:
-      "Architected scalable microservices for financial and healthcare industries, serving 20M+ active users. Directed the adoption of a unified design system across 12 product lines, increasing brand consistency and dev speed by 50%. Mentored 40+ senior engineers into leadership positions.",
-    icon: <Layers className="h-4 w-4 mr-2 text-primary" />,
-  },
-  {
-    year: "2016 – 2020",
-    title: "Lead Full-Stack Developer",
-    subtitle: "Skyline Interactive",
-    description:
-      "Spearheaded the creation of immersive web applications using React, GraphQL, and Node.js for high-profile clients. Reduced application load times by 70% through advanced performance optimization. Introduced component-driven workflows that became the company's standard practice.",
+      "Engineered cross-platform client solutions including the BirStock ERP inventory desktop system (Electron.js), Restaurant POS web software, and customer-facing mobile apps with clean architecture, offline support, and local database storage.",
     icon: <Code className="h-4 w-4 mr-2 text-primary" />,
   },
   {
-    year: "2012 – 2016",
-    title: "Senior UI/UX Designer",
-    subtitle: "PixelForge Studios",
+    year: "2023 – 2024",
+    title: "Web Developer & Interface Designer",
+    subtitle: "Independent Developer",
     description:
-      "Designed award-winning digital experiences for global brands, winning multiple Awwwards and Webby Awards. Championed user-centered design by integrating continuous feedback loops into every sprint. Collaborated with cross-functional teams to unify visual and interaction design.",
+      "Designed and developed responsive web solutions with modern JavaScript, React.js, and Tailwind CSS. Built high-conversion interfaces and optimized workflows for fast load times and seamless cross-device compatibility.",
     icon: <Sparkles className="h-4 w-4 mr-2 text-primary" />,
-  },
-  {
-    year: "2008 – 2012",
-    title: "Frontend Developer & Interaction Designer",
-    subtitle: "CreativeSpark Agency",
-    description:
-      "Built responsive and interactive marketing websites during the rise of mobile-first design. Created high-conversion landing pages for major e-commerce campaigns. Developed custom animations that improved user engagement metrics by over 45%.",
-    icon: <Users className="h-4 w-4 mr-2 text-primary" />,
   },
 ];
 

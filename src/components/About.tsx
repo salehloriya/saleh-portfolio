@@ -43,7 +43,7 @@ export const About: React.FC = () => {
               <span className="text-gradient-primary">Digital Excellence</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a passionate Full-Stack MERN & Cross-Platform App Developer with practical experience in crafting robust web apps, mobile apps (React Native), and desktop software (Electron.js). Currently working at Valudas Technologies and pursuing B.Sc. IT, I focus on transforming client requirements into scalable, modern, and user-friendly digital products.
+              I am a passionate Full-Stack MERN & Cross-Platform App Developer with practical experience in crafting robust web apps, mobile apps (React Native), and desktop software (Electron.js). Currently working at Birtik Tech Pvt. Ltd. and pursuing B.Sc. IT, I focus on transforming client requirements into scalable, modern, and user-friendly digital products.
             </p>
           </div>
         </div>
