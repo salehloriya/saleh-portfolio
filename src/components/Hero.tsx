@@ -53,10 +53,19 @@ export const Hero: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-2">
               Hi, I'm
             </h1>
-            <div>
-              <span className="text-gradient-primary font-black text-[clamp(3rem,6.5vw,5.5rem)] leading-none tracking-tight block pb-2 select-none">
+            {/* Light Mode Gradient (Original) */}
+            <div className="block dark:hidden">
+              <span className="bg-gradient-to-r from-violet-600 via-sky-500 via-purple-600 to-indigo-600 bg-clip-text text-transparent font-extrabold text-[clamp(3rem,6.5vw,5.5rem)] leading-none tracking-tight block pb-2 select-none">
                 Saleh Loriya
               </span>
+            </div>
+            {/* Dark Mode Aurora Animated Text (Original) */}
+            <div className="hidden dark:block">
+              <AuroraText
+                text="Saleh Loriya"
+                fontSize="clamp(3rem, 6.5vw, 5.5rem)"
+                className="justify-start"
+              />
             </div>
             <div className="text-xl md:text-2xl font-bold text-primary mt-1 mb-2">
               Full-Stack Developer
