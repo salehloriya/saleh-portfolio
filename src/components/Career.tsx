@@ -70,8 +70,8 @@ export const Career: React.FC = () => {
               left: "50%",
               transform: "translateX(-50%)",
               borderRadius: "9999px",
-              background: "linear-gradient(to bottom, #22d3ee, #6366f1, #a855f7)",
-              boxShadow: "0 0 15px rgba(99,102,241,0.5), 0 0 25px rgba(168,85,247,0.3)",
+              background: "linear-gradient(to bottom, #0284C7, #004E7A, #0284C7)",
+              boxShadow: "0 0 15px rgba(0,78,122,0.4), 0 0 25px rgba(2,132,199,0.3)",
             }}
           />
 
@@ -89,10 +89,10 @@ export const Career: React.FC = () => {
                   {/* Center Dot indicator */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 hidden lg:block">
                     <motion.div
-                      className="w-6 h-6 rounded-full border-4 border-primary bg-background flex items-center justify-center shadow-lg"
+                      className="w-6 h-6 rounded-full border-4 border-[#004E7A] bg-white flex items-center justify-center shadow-lg"
                       whileHover={{ scale: 1.25 }}
                     >
-                      <div className="w-2 h-2 rounded-full bg-primary" />
+                      <div className="w-2 h-2 rounded-full bg-[#004E7A]" />
                     </motion.div>
                   </div>
 
@@ -106,10 +106,10 @@ export const Career: React.FC = () => {
                       isEven ? "lg:mr-[calc(50%+20px)]" : "lg:ml-[calc(50%+20px)]"
                     }`}
                   >
-                    <div className="glass-panel p-8 rounded-[2rem] border border-border/80 bg-card/90 shadow-xl hover:border-primary/40 hover:shadow-2xl transition-all">
+                    <div className="bg-[#EAF3F8] p-8 rounded-[2rem] border border-[#D1E5F0] shadow-md hover:border-[#004E7A]/40 hover:shadow-xl transition-all">
                       <div className="flex items-center gap-2 mb-3">
                         {item.icon}
-                        <span className="text-sm font-bold text-primary font-mono bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+                        <span className="text-sm font-bold text-primary font-mono bg-white px-3 py-1 rounded-full border border-primary/20">
                           {item.year}
                         </span>
                       </div>

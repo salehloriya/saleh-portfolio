@@ -51,42 +51,43 @@ const professionalTraits = [
 
 export const Education: React.FC = () => {
   return (
-    <section id="education" className="max-w-7xl mx-auto px-6 py-24 space-y-20">
-      {/* Education Header & Cards */}
-      <div>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="mb-12"
-        >
-          <div className="flex items-center gap-4 mb-3">
-            <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/25 flex items-center justify-center text-primary shadow-md">
-              <GraduationCap className="w-6 h-6" />
+    <section id="education" className="w-full bg-[#EAF3F8] py-24 border-y border-[#D1E5F0]">
+      <div className="max-w-7xl mx-auto px-6 space-y-20">
+        {/* Education Header & Cards */}
+        <div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <div className="flex items-center gap-4 mb-3">
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/25 flex items-center justify-center text-primary shadow-md">
+                <GraduationCap className="w-6 h-6" />
+              </div>
+              <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-[#111827]">
+                Academic <span className="text-gradient-primary">Background</span>
+              </h2>
             </div>
-            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">
-              Academic <span className="text-gradient-primary">Background</span>
-            </h2>
-          </div>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Building the theoretical foundation and research methodologies that empower high-performance practical engineering.
-          </p>
-        </motion.div>
+            <p className="text-muted-foreground text-lg max-w-2xl">
+              Building the theoretical foundation and research methodologies that empower high-performance practical engineering.
+            </p>
+          </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {educationList.map((item, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.15, duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <MagicCard
-                className="h-full p-8 rounded-[2.25rem] border border-border/80 bg-card/80 shadow-xl"
-                gradientSize={300}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {educationList.map((item, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.15, duration: 0.5 }}
+                viewport={{ once: true }}
               >
+                <MagicCard
+                  className="h-full p-8 rounded-[2.25rem] border border-[#D1E5F0] bg-white shadow-md hover:shadow-xl hover:border-[#004E7A]/40"
+                  gradientSize={300}
+                >
                 <div className="flex flex-col h-full justify-between gap-6">
                   <div>
                     <div className="flex items-start justify-between gap-4 mb-6">
@@ -158,12 +159,12 @@ export const Education: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Technical Arsenal with Progress Bars */}
-          <div className="glass-panel p-8 rounded-[2rem] border border-foreground/15 shadow-xl relative overflow-hidden">
-            <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/60">
+          <div className="bg-white p-8 rounded-[2rem] border border-[#D1E5F0] shadow-md relative overflow-hidden">
+            <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#D1E5F0]">
               <h4 className="text-xl font-bold text-foreground flex items-center gap-2">
                 <Server className="w-5 h-5 text-primary" /> Technical Arsenal
               </h4>
-              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground bg-muted/60 px-3 py-1 rounded-full border border-border/50">
+              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground bg-[#EAF3F8] px-3 py-1 rounded-full border border-[#D1E5F0]">
                 Proficiency
               </span>
             </div>
@@ -175,19 +176,19 @@ export const Education: React.FC = () => {
                   <div key={tIdx} className="space-y-2.5">
                     <div className="flex justify-between items-center text-sm font-semibold">
                       <span className="text-foreground flex items-center gap-2.5">
-                        <div className="p-1.5 rounded-lg bg-foreground/5 border border-foreground/10">
+                        <div className="p-1.5 rounded-lg bg-[#EAF3F8] border border-[#D1E5F0]">
                           <Icon className={`w-4 h-4 ${tech.color}`} />
                         </div>
                         {tech.name}
                       </span>
-                      <span className="font-mono font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full text-xs border border-primary/20">
+                      <span className="font-mono font-bold text-primary bg-[#EAF3F8] px-2.5 py-0.5 rounded-full text-xs border border-primary/20">
                         {tech.level}%
                       </span>
                     </div>
 
-                    <div className="h-2.5 w-full bg-muted/60 rounded-full overflow-hidden border border-border/40 p-[1px]">
+                    <div className="h-2.5 w-full bg-[#EAF3F8] rounded-full overflow-hidden border border-[#D1E5F0] p-[1px]">
                       <motion.div
-                        className="h-full bg-gradient-to-r from-purple-600 via-primary to-sky-400 rounded-full relative shadow-[0_0_12px_rgba(139,92,246,0.5)]"
+                        className="h-full bg-gradient-to-r from-[#004E7A] via-[#0284C7] to-sky-400 rounded-full relative shadow-[0_0_12px_rgba(0,78,122,0.4)]"
                         initial={{ width: 0 }}
                         whileInView={{ width: `${tech.level}%` }}
                         transition={{
@@ -207,13 +208,13 @@ export const Education: React.FC = () => {
           </div>
 
           {/* Professional Traits */}
-          <div className="glass-panel p-8 rounded-[2rem] border border-foreground/15 shadow-xl flex flex-col justify-between">
+          <div className="bg-white p-8 rounded-[2rem] border border-[#D1E5F0] shadow-md flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/60">
+              <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#D1E5F0]">
                 <h4 className="text-xl font-bold text-foreground flex items-center gap-2">
                   <Lightbulb className="w-5 h-5 text-primary" /> Professional Traits
                 </h4>
-                <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground bg-muted/60 px-3 py-1 rounded-full border border-border/50">
+                <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground bg-[#EAF3F8] px-3 py-1 rounded-full border border-[#D1E5F0]">
                   Core Competencies
                 </span>
               </div>
@@ -243,8 +244,8 @@ export const Education: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-border/60">
-              <div className="p-4 rounded-2xl bg-gradient-to-r from-primary/10 via-purple-500/5 to-transparent border border-primary/20 flex items-start gap-3.5 shadow-sm">
+            <div className="mt-8 pt-6 border-t border-[#D1E5F0]">
+              <div className="p-4 rounded-2xl bg-gradient-to-r from-primary/10 via-sky-500/5 to-transparent border border-primary/20 flex items-start gap-3.5 shadow-sm">
                 <div className="p-2 rounded-xl bg-primary/20 text-primary shrink-0 mt-0.5">
                   <Sparkles className="w-5 h-5" />
                 </div>
@@ -261,6 +262,7 @@ export const Education: React.FC = () => {
           </div>
         </div>
       </motion.div>
+      </div>
     </section>
   );
 };

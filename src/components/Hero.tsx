@@ -53,19 +53,10 @@ export const Hero: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-2">
               Hi, I'm
             </h1>
-            {/* Light Mode Gradient */}
-            <div className="block dark:hidden">
-              <span className="bg-gradient-to-r from-violet-600 via-sky-500 via-purple-600 to-indigo-600 bg-clip-text text-transparent font-extrabold text-[clamp(3rem,6.5vw,5.5rem)] leading-none tracking-tight block pb-2 select-none">
+            <div>
+              <span className="text-gradient-primary font-black text-[clamp(3rem,6.5vw,5.5rem)] leading-none tracking-tight block pb-2 select-none">
                 Saleh Loriya
               </span>
-            </div>
-            {/* Dark Mode Aurora Animated Text */}
-            <div className="hidden dark:block">
-              <AuroraText
-                text="Saleh Loriya"
-                fontSize="clamp(3rem, 6.5vw, 5.5rem)"
-                className="justify-start"
-              />
             </div>
             <div className="text-xl md:text-2xl font-bold text-primary mt-1 mb-2">
               Full-Stack Developer
@@ -91,7 +82,7 @@ export const Hero: React.FC = () => {
           >
             <button
               onClick={() => scrollTo("#projects")}
-              className="rounded-full px-7 h-12 bg-primary text-primary-foreground font-semibold flex items-center gap-2 hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:-translate-y-1 cursor-pointer"
+              className="rounded-full px-7 h-12 bg-primary text-primary-foreground font-semibold flex items-center gap-2 hover:bg-[#003B5C] transition-all shadow-[0_4px_20px_rgba(0,78,122,0.25)] hover:shadow-[0_6px_25px_rgba(0,78,122,0.4)] hover:-translate-y-1 cursor-pointer"
             >
               <span>View Work</span>
               <ArrowRight className="w-4 h-4" />
@@ -101,7 +92,7 @@ export const Hero: React.FC = () => {
               download="Saleh_Loriya_Resume.pdf"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full px-7 h-12 glass-panel text-foreground font-semibold flex items-center gap-2 hover:bg-foreground/10 transition-all hover:-translate-y-1 border border-foreground/10 cursor-pointer"
+              className="rounded-full px-7 h-12 bg-[#EAF3F8] text-[#004E7A] font-semibold flex items-center gap-2 hover:bg-[#D5E8F3] transition-all hover:-translate-y-1 border border-[#004E7A]/25 cursor-pointer shadow-sm"
             >
               <span>Resume</span>
               <Download className="w-4 h-4" />
@@ -146,9 +137,9 @@ export const Hero: React.FC = () => {
             role="Full-Stack Developer"
             badgeId="SJ-2026-DEV"
             image="/profile-new.jpg"
-            accentColor="#8b5cf6"
+            accentColor="#004E7A"
             ropeLength={75}
-            ropeColor="#27272a"
+            ropeColor="#004E7A"
             cardWidth="w-72 sm:w-80 md:w-84"
           />
         </motion.div>

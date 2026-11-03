@@ -91,3 +91,96 @@
   z-index: 99999;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+
+
+/* ========================================================
+   SALEH LORIYA PORTFOLIO THEME OVERRIDES:
+   Primary: #004E7A
+   Background: #FFFFFF
+   Text / Foreground: #111827
+   Section: #EAF3F8
+   ======================================================== */
+
+:root, html, body, .light {
+  /* Tailwind HSL format (numbers without comma) */
+  --background: 0 0% 100% !important;
+  --foreground: 221 39% 11% !important;
+  --card: 0 0% 100% !important;
+  --card-foreground: 221 39% 11% !important;
+  --popover: 0 0% 100% !important;
+  --popover-foreground: 221 39% 11% !important;
+  --primary: 202 100% 24% !important;
+  --primary-foreground: 0 0% 100% !important;
+  --secondary: 201 47% 95% !important;
+  --secondary-foreground: 202 100% 24% !important;
+  --muted: 201 47% 95% !important;
+  --muted-foreground: 215 16% 40% !important;
+  --accent: 201 47% 95% !important;
+  --accent-foreground: 202 100% 24% !important;
+  --border: 201 50% 88% !important;
+  --input: 201 50% 88% !important;
+  --ring: 202 100% 24% !important;
+
+  /* Direct variables */
+  --bg: #FFFFFF !important;
+  --fg: #111827 !important;
+  --glass-bg: rgba(255, 255, 255, 0.9) !important;
+  --glass-border: rgba(0, 78, 122, 0.15) !important;
+}
+
+body {
+  background-color: #FFFFFF !important;
+  color: #111827 !important;
+  background-image: none !important;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #004E7A 0%, #0284C7 50%, #004E7A 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: #004E7A !important;
+}
+
+.glass-panel {
+  background-color: #FFFFFF !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(0, 78, 122, 0.15) !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 78, 122, 0.08) !important;
+}
+
+.section-tint {
+  background-color: #EAF3F8 !important;
+}
+
+.liquid-dock-wrapper {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(0, 78, 122, 0.18) !important;
+  box-shadow: 0 15px 35px -5px rgba(0, 78, 122, 0.15), 0 0 0 1px rgba(0, 78, 122, 0.05) !important;
+}
+
+.liquid-dock-cavity {
+  background: rgba(234, 243, 248, 0.95) !important;
+  border: 1px solid rgba(209, 229, 240, 0.9) !important;
+}
+
+.liquid-dock-item {
+  background: #FFFFFF !important;
+  color: #004E7A !important;
+  border: 1px solid rgba(0, 78, 122, 0.18) !important;
+  box-shadow: 0 3px 10px rgba(0, 78, 122, 0.08) !important;
+}
+
+.liquid-dock-item:hover {
+  background: #EAF3F8 !important;
+  border-color: #004E7A !important;
+  color: #004E7A !important;
+}
+
+.liquid-dock-tooltip {
+  background: #004E7A !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 14px rgba(0, 78, 122, 0.25) !important;
+}

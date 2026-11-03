@@ -268,13 +268,13 @@ export const LanyardBadge: React.FC<LanyardBadgeProps> = ({
         {/* Card Body */}
         <div
           className={cn(
-            "relative rounded-[1.75rem] overflow-hidden shadow-2xl border border-foreground/15 dark:border-white/15 bg-card pointer-events-none mt-[-16px]",
+            "relative rounded-[1.75rem] overflow-hidden shadow-2xl border border-[#D1E5F0] bg-white pointer-events-none mt-[-16px]",
             cardWidth
           )}
           style={{
             transformStyle: "preserve-3d",
             boxShadow:
-              "0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 35px -5px rgba(139, 92, 246, 0.25)",
+              "0 25px 50px -12px rgba(0, 78, 122, 0.25), 0 0 25px -5px rgba(0, 78, 122, 0.15)",
           }}
         >
           {/* Lanyard punch hole cutout */}
@@ -285,13 +285,13 @@ export const LanyardBadge: React.FC<LanyardBadgeProps> = ({
           </div>
 
           {children ?? (
-            <div className="flex flex-col h-full bg-card w-full">
+            <div className="flex flex-col h-full bg-white w-full">
               {/* Header Gradient */}
-              <div className="relative px-5 pt-7 pb-6 flex flex-col items-center bg-gradient-to-br from-purple-700 via-primary to-indigo-950 text-white overflow-hidden">
+              <div className="relative px-5 pt-7 pb-6 flex flex-col items-center bg-gradient-to-br from-[#004E7A] via-[#02629B] to-[#003350] text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:12px_12px] pointer-events-none" />
 
                 {/* Avatar with gradient ring */}
-                <div className="mt-1 relative w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-primary to-purple-400 backdrop-blur-md shadow-2xl border border-white/50 overflow-hidden group">
+                <div className="mt-1 relative w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-[#38BDF8] via-[#004E7A] to-[#EAF3F8] backdrop-blur-md shadow-2xl border border-white/50 overflow-hidden group">
                   <img
                     src={image}
                     alt={name}
@@ -302,7 +302,7 @@ export const LanyardBadge: React.FC<LanyardBadgeProps> = ({
               </div>
 
               {/* Card Details */}
-              <div className="p-5 flex flex-col items-center text-center bg-card text-card-foreground flex-1 gap-3">
+              <div className="p-5 flex flex-col items-center text-center bg-white text-[#111827] flex-1 gap-3">
                 <div>
                   <h3 className="text-xl font-extrabold tracking-tight text-foreground">
                     {name}
@@ -315,7 +315,7 @@ export const LanyardBadge: React.FC<LanyardBadgeProps> = ({
                 <div className="w-full border-t border-border/60 my-0.5" />
 
                 {/* 2x2 Info Grid */}
-                <div className="grid grid-cols-2 gap-2.5 w-full text-left bg-muted/40 p-3 rounded-xl border border-border/50">
+                <div className="grid grid-cols-2 gap-2.5 w-full text-left bg-[#EAF3F8] p-3 rounded-xl border border-[#D1E5F0]">
                   <div>
                     <span className="text-muted-foreground block text-[9px] uppercase tracking-widest font-bold">
                       Specialty

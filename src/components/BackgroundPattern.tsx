@@ -14,13 +14,13 @@ interface BackgroundPatternProps extends React.SVGProps<SVGSVGElement> {
 }
 
 export const BackgroundPattern: React.FC<BackgroundPatternProps> = ({
-  width = 16,
-  height = 16,
+  width = 28,
+  height = 28,
   x = 0,
   y = 0,
-  cx = 1,
-  cy = 1,
-  cr = 1,
+  cx = 14,
+  cy = 14,
+  cr = 1.2,
   className,
   glow = true,
   ...props
@@ -32,7 +32,7 @@ export const BackgroundPattern: React.FC<BackgroundPatternProps> = ({
       <svg
         aria-hidden="true"
         className={cn(
-          "pointer-events-none absolute inset-0 h-full w-full fill-foreground/35 dark:fill-white/35 [mask-image:radial-gradient(ellipse_at_center,white_55%,transparent_90%)]",
+          "pointer-events-none absolute inset-0 h-full w-full [mask-image:radial-gradient(ellipse_at_center,white_60%,transparent_90%)]",
           className
         )}
         {...props}
@@ -45,13 +45,13 @@ export const BackgroundPattern: React.FC<BackgroundPatternProps> = ({
             patternUnits="userSpaceOnUse"
             patternTransform={`translate(${x} ${y})`}
           >
-            <circle cx={cx} cy={cy} r={cr} />
+            <circle cx={cx} cy={cy} r={cr} fill="#004E7A" fillOpacity="0.09" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" strokeWidth={0} fill={`url(#${id})`} />
       </svg>
       {glow && (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] bg-primary/25 dark:bg-primary/35 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] bg-[#EAF3F8] blur-[120px] rounded-full pointer-events-none opacity-80" />
       )}
     </div>
   );

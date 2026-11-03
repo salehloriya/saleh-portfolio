@@ -13,7 +13,7 @@ interface CustomCursorProps {
 
 export const CustomCursor: React.FC<CustomCursorProps> = ({
   size = 22,
-  color = "#8b5cf6",
+  color = "#004E7A",
   className,
   glowEffect = true,
   trailLength = 4,

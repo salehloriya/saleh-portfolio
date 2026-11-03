@@ -39,23 +39,24 @@ const projects = [
 
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="w-full max-w-7xl mx-auto px-6 py-24">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 0.8 }}
-        className="mb-12 md:mb-16"
-      >
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-center md:text-left">
-          Selected <span className="text-gradient-primary">Works</span>
-        </h2>
-        <p className="text-muted-foreground text-center md:text-left max-w-2xl text-lg">
-          A showcase of complex systems, elegant interfaces, and scalable applications I've engineered.
-        </p>
-      </motion.div>
+    <section id="projects" className="w-full bg-[#EAF3F8] py-24 border-y border-[#D1E5F0]">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.8 }}
+          className="mb-12 md:mb-16"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-center md:text-left text-[#111827]">
+            Selected <span className="text-gradient-primary">Works</span>
+          </h2>
+          <p className="text-muted-foreground text-center md:text-left max-w-2xl text-lg">
+            A showcase of complex systems, elegant interfaces, and scalable applications I've engineered.
+          </p>
+        </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 w-full">
         {projects.map((item, idx) => (
           <motion.a
             key={item.id}
@@ -98,6 +99,7 @@ export const Projects: React.FC = () => {
             </div>
           </motion.a>
         ))}
+        </div>
       </div>
     </section>
   );

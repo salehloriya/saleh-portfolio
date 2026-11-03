@@ -16,9 +16,9 @@ export const MagicCard: React.FC<MagicCardProps> = ({
   children,
   className,
   gradientSize = 280,
-  gradientColor = "rgba(139, 92, 246, 0.12)",
-  gradientFrom = "#8b5cf6",
-  gradientTo = "#38bdf8",
+  gradientColor = "rgba(0, 78, 122, 0.12)",
+  gradientFrom = "#004E7A",
+  gradientTo = "#0284C7",
   ...props
 }) => {
   const mouseX = useMotionValue(-gradientSize);

@@ -7,10 +7,10 @@ export const ThemeToggle: React.FC<{ className?: string }> = ({ className }) => 
     if (typeof window !== "undefined") {
       return (
         document.documentElement.classList.contains("dark") ||
-        localStorage.getItem("theme") !== "light"
+        localStorage.getItem("theme") === "dark"
       );
     }
-    return true;
+    return false;
   });
 
   useEffect(() => {

@@ -54,12 +54,12 @@ export const Testimonials: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.15, duration: 0.5 }}
-            className="glass-panel p-8 rounded-3xl border border-foreground/10 flex flex-col relative overflow-hidden group hover:border-primary/30 transition-colors duration-500 shadow-xl"
+            className="bg-[#EAF3F8] p-8 rounded-3xl border border-[#D1E5F0] flex flex-col relative overflow-hidden group hover:border-[#004E7A]/40 transition-all duration-300 shadow-sm hover:shadow-lg"
           >
-            <div className="absolute -right-10 -top-10 w-32 h-32 bg-primary/10 rounded-full blur-[40px] group-hover:bg-primary/20 transition-colors duration-500 pointer-events-none" />
+            <div className="absolute -right-10 -top-10 w-32 h-32 bg-[#004E7A]/5 rounded-full blur-[40px] group-hover:bg-[#004E7A]/10 transition-colors duration-500 pointer-events-none" />
 
             {/* Quote Icon */}
-            <div className="absolute top-6 right-8 text-primary/15 select-none">
+            <div className="absolute top-6 right-8 text-[#004E7A]/15 select-none">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M10 11l-2 2v-3H4V4h6v7zm10 0l-2 2v-3h-4V4h6v7z" />
               </svg>

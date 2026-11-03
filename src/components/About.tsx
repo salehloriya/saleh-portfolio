@@ -27,52 +27,54 @@ const stats = [
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 py-24">
-      <motion.div
-        className="flex flex-col md:flex-row gap-16 items-center"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        {/* Left Column: Story */}
-        <div className="flex-1 space-y-8">
-          <div>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-              Passionate about{" "}
-              <span className="text-gradient-primary">Digital Excellence</span>
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a passionate Full-Stack MERN & Cross-Platform App Developer with practical experience in crafting robust web apps, mobile apps (React Native), and desktop software (Electron.js). Currently working at Birtik Tech Pvt. Ltd. and pursuing B.Sc. IT, I focus on transforming client requirements into scalable, modern, and user-friendly digital products.
-            </p>
-          </div>
-        </div>
-
-        {/* Right Column: 2x2 Stats Grid */}
-        <div className="flex-1 grid grid-cols-2 gap-4 w-full">
-          {stats.map((item, idx) => (
-            <motion.div
-              key={idx}
-              className="glass-panel p-6 rounded-2xl border border-foreground/10 hover:border-primary/50 transition-colors group relative overflow-hidden"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: idx * 0.1, duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <div className="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors" />
-              <div className="text-primary mb-4 p-3 bg-primary/10 w-max rounded-xl">
-                <item.icon className="w-6 h-6" />
-              </div>
-              <h3 className="text-3xl font-bold text-foreground mb-1">
-                {item.value}
-              </h3>
-              <p className="text-sm font-medium text-muted-foreground">
-                {item.label}
+    <section id="about" className="w-full bg-[#EAF3F8] py-24 border-y border-[#D1E5F0]">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.div
+          className="flex flex-col md:flex-row gap-16 items-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {/* Left Column: Story */}
+          <div className="flex-1 space-y-8">
+            <div>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-[#111827]">
+                Passionate about{" "}
+                <span className="text-gradient-primary">Digital Excellence</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I am a passionate Full-Stack MERN & Cross-Platform App Developer with practical experience in crafting robust web apps, mobile apps (React Native), and desktop software (Electron.js). Currently working at Birtik Tech Pvt. Ltd. and pursuing B.Sc. IT, I focus on transforming client requirements into scalable, modern, and user-friendly digital products.
               </p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+            </div>
+          </div>
+
+          {/* Right Column: 2x2 Stats Grid */}
+          <div className="flex-1 grid grid-cols-2 gap-4 w-full">
+            {stats.map((item, idx) => (
+              <motion.div
+                key={idx}
+                className="bg-white p-6 rounded-2xl border border-[#004E7A]/15 hover:border-[#004E7A]/40 shadow-sm hover:shadow-md transition-all group relative overflow-hidden"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: idx * 0.1, duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <div className="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors" />
+                <div className="text-primary mb-4 p-3 bg-primary/10 w-max rounded-xl">
+                  <item.icon className="w-6 h-6" />
+                </div>
+                <h3 className="text-3xl font-bold text-foreground mb-1">
+                  {item.value}
+                </h3>
+                <p className="text-sm font-medium text-muted-foreground">
+                  {item.label}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 };
