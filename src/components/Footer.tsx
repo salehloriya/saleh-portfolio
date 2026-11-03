@@ -1,13 +1,13 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowUp, Twitter, Github, Linkedin, Mail, Heart } from "lucide-react";
+import { ArrowUp, Github, Linkedin, Mail, Heart, Phone } from "lucide-react";
 
 const morphTexts = [
   "Full-Stack Developer",
-  "UI/UX Architect",
-  "AI Systems Engineer",
-  "Product Builder",
-  "Scarlett Rose",
+  "React Native & Mobile Apps",
+  "Electron Desktop Systems",
+  "MERN Stack Specialist",
+  "Saleh Loriya",
 ];
 
 const TextMorph: React.FC<{ texts: string[]; className?: string }> = ({
@@ -120,10 +120,10 @@ export const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:hello@scarlettrose.dev", label: "Email" },
+    { icon: Github, href: "https://github.com/salehloriya", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/saleh-loriya-a74b74386/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:loriyasaleh@gmail.com", label: "Email" },
+    { icon: Phone, href: "https://wa.me/917862072271", label: "WhatsApp" },
   ];
 
   return (
@@ -137,16 +137,16 @@ export const Footer: React.FC = () => {
             <div className="relative w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 via-primary to-sky-400 p-[1px] shadow-lg">
               <div className="w-full h-full bg-background rounded-[11px] flex items-center justify-center">
                 <span className="font-extrabold text-xs tracking-tighter bg-gradient-to-r from-purple-500 to-sky-400 bg-clip-text text-transparent">
-                  SR
+                  SL
                 </span>
               </div>
             </div>
             <div className="flex flex-col text-left">
               <span className="font-extrabold tracking-tight text-foreground text-base leading-none">
-                Scarlett Rose
+                Saleh Loriya
               </span>
               <span className="text-[10px] font-bold text-muted-foreground tracking-widest uppercase mt-0.5">
-                Director of Product Engineering
+                Full-Stack Developer
               </span>
             </div>
           </div>
@@ -204,9 +204,9 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-1.5 font-medium text-center md:text-right">
-            <span>© {new Date().getFullYear()} Scarlett Rose. Crafted with</span>
+            <span>© {new Date().getFullYear()} Saleh Loriya. Crafted with</span>
             <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 inline-block" />
-            <span>& Lightswind UI</span>
+            <span>& React</span>
           </div>
         </div>
       </div>

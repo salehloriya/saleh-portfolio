@@ -37,32 +37,35 @@ export const Contact: React.FC = () => {
 
             <div className="space-y-6">
               <a
-                href="mailto:hello@scarlettrose.dev"
+                href="mailto:loriyasaleh@gmail.com"
                 className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors cursor-pointer group"
               >
                 <div className="w-12 h-12 rounded-full glass-panel flex items-center justify-center group-hover:scale-110 transition-transform shadow-md border border-foreground/10">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <span className="font-semibold text-foreground text-base">
-                  hello@scarlettrose.dev
+                  loriyasaleh@gmail.com
                 </span>
               </a>
 
-              <div className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors cursor-pointer group">
+              <a
+                href="tel:+917862072271"
+                className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors cursor-pointer group"
+              >
                 <div className="w-12 h-12 rounded-full glass-panel flex items-center justify-center group-hover:scale-110 transition-transform shadow-md border border-foreground/10">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <span className="font-semibold text-foreground text-base">
-                  +1 (234) 567-8900
+                  +91 7862072271
                 </span>
-              </div>
+              </a>
 
               <div className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors cursor-pointer group">
                 <div className="w-12 h-12 rounded-full glass-panel flex items-center justify-center group-hover:scale-110 transition-transform shadow-md border border-foreground/10">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <span className="font-semibold text-foreground text-base">
-                  San Francisco, CA
+                  Siddhpur, Gujarat, India
                 </span>
               </div>
             </div>
