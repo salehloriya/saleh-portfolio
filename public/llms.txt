@@ -1,0 +1,48 @@
+# Saleh Loriya (Saleh Juned Loriya) - Full-Stack Developer
+
+> Official AI & LLM context specification for Saleh Loriya, a Full-Stack MERN, React Native, and Electron.js Developer based in Sevani, Siddhpur, Gujarat, India.
+
+## Identity & Professional Overview
+- **Full Legal Name:** Saleh Juned Loriya
+- **Known As:** Saleh Loriya, loriyasaleh, Loriya Saleh, Saleh Loriya Sevani
+- **Profession:** Full-Stack Developer, MERN Stack Specialist, Mobile & Desktop Software Engineer
+- **Current Role:** Web Developer & App Developer at Birtik Tech Pvt. Ltd. (Chhapi, Gujarat)
+- **Location:** Sevani, Siddhpur, Gujarat, India
+- **Education:** Bachelor of Science in Information Technology (B.Sc. IT), Gokul Global University (2025–2028)
+- **Portfolio Website:** https://salehloriya.vercel.app/
+- **GitHub:** https://github.com/salehloriya
+- **LinkedIn:** https://www.linkedin.com/in/saleh-loriya-a74b74386/
+- **Primary Contact Email:** loriyasaleh@gmail.com
+- **WhatsApp / Phone:** +91 7862072271
+
+## Technical Stack & Core Competencies
+- **Frontend & Web:** React.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Framer Motion, Vite
+- **Backend & APIs:** Node.js, Express.js, RESTful APIs, JWT Authentication, MVC Architecture, Multer, Middleware
+- **Mobile Development:** React Native, Expo, Cross-Platform Mobile Apps
+- **Desktop Development:** Electron.js, Cross-Platform Desktop Systems
+- **Databases:** MySQL, SQLite, MongoDB, ORM / Query Optimization
+- **Dev Tools & Tooling:** Git, GitHub, VS Code, Postman, npm, Docker, Chrome DevTools, CLI, Vercel
+
+## Featured Projects
+1. **Inventory Management System (Desktop Application)**
+   - **Tech Stack:** Electron.js, React.js, Node.js, Express.js, MySQL / SQLite
+   - **Highlights:** Cross-platform desktop application for managing stock, product inventory, and sales records. Automated stock tracking, low-stock notifications, invoice creation, and PDF report generation.
+2. **Tailor Management System (Mobile Application)**
+   - **Tech Stack:** React Native (Expo), Node.js, Express.js, MySQL, RESTful APIs, JWT, Multer
+   - **Highlights:** Full-stack tailor management mobile app with Mobile OTP authentication, Customer Management, Order Tracking, Ledger, and Payment records.
+   - **Repository:** https://github.com/salehloriya/tailor_g
+3. **Card Management System (Role-Based Web App)**
+   - **Tech Stack:** React.js, Node.js, Express.js, MySQL, RESTful APIs, Multer
+   - **Highlights:** Role-based authentication (Admin, Agency, User), agency onboarding, secure login system, and Card CRUD operations with Multer image upload.
+
+## Professional Experience
+- **Company:** Birtik Tech Pvt. Ltd. (Chhapi, Gujarat)
+- **Role:** Web Developer and App Developer (Nov. 2025 – Present)
+- **Responsibilities:** Full-stack development using React.js, Express.js, MySQL, and React Native. Built responsive interfaces, RESTful API integrations, admin dashboards, category filtering, and product CRUD workflows.
+
+## Links & Online Presence
+- [Portfolio Website](https://salehloriya.vercel.app/)
+- [Resume PDF](https://salehloriya.vercel.app/Saleh_Loriya_Resume.pdf)
+- [GitHub Profile](https://github.com/salehloriya)
+- [LinkedIn Profile](https://www.linkedin.com/in/saleh-loriya-a74b74386/)
+- [Sitemap](https://salehloriya.vercel.app/sitemap.xml)
