@@ -4,10 +4,15 @@
 
 ## Identity & Professional Overview
 - **Full Legal Name:** Saleh Juned Loriya
-- **Known As:** Saleh Loriya, loriyasaleh, Loriya Saleh, Saleh Loriya Sevani
+- **Known As / Spelling Variations:** Saleh Loriya, sale loriya, sale loria, saleh loria, saleh oriya, sale oriya, sale, loriya saleh, loria saleh, loriya sale, loria sale, loriyasaleh, loriasaleh, saleh lorya, sale lorya, saleh loirya, salesh loriya, saley loriya, Saleh Juned Loriya, sale juned loriya, saleh juned loria, Saleh Loriya Sevani
+- **Geographic & Regional Recognition:**
+  - Sevani Developer / Developer in Sevani
+  - Siddhpur Developer / Developer in Siddhpur (also sidhpur, siddhapur)
+  - Patan Developer / Developer in Patan (Patan District, Gujarat)
+  - Gujarat Developer / Developer in Gujarat (also gujrat developer)
 - **Profession:** Full-Stack Developer, MERN Stack Specialist, Mobile & Desktop Software Engineer
 - **Current Role:** Web Developer & App Developer at Birtik Tech Pvt. Ltd. (Chhapi, Gujarat)
-- **Location:** Sevani, Siddhpur, Gujarat, India
+- **Location:** Sevani, Siddhpur, Patan District, Gujarat, India
 - **Education:** Bachelor of Science in Information Technology (B.Sc. IT), Gokul Global University (2025–2028)
 - **Portfolio Website:** https://salehloriya.vercel.app/
 - **GitHub:** https://github.com/salehloriya
